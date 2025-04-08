@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" /> <!-- Your custom CSS -->
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .product-details-page {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .product-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      color: #3498db;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .btn-cart, .btn-buy {
+      padding: 12px 25px;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    .btn-buy {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+    }
+
+    .btn-buy:hover {
+      background-color: #2980b9;
+    }
+
+    .btn-cart {
+      background-color: #eee;
+      color: #333;
+      border: none;
+    }
+
+    .btn-cart:hover {
+      background-color: #ddd;
+    }
+
+    .go-back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .go-back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container product-details-page">
+    <a href="javascript:history.back()" class="go-back">&larr; Go Back</a>
+
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6">
+        <img src="images/sony/Sony WH-1000XM4.png" alt="Product Name" class="product-img" />
+      </div>
+      <div class="col-md-6">
+        <h1 class="product-title">Sony WH-1000XM4</h1>
+        <p class="price">₱16,999  </p>
+        <p class="description">
+          The WH-1000XM4 offers industry-leading noise cancellation, adaptive sound control, and speak-to-chat functionality. These wireless over-ear headphones provide up to 30 hours of battery life and support multipoint connection.w        </p>
+        <div class="d-flex gap-3">
+          <button class="btn btn-buy" onclick="alert('Purchase Successful! Thank you for your order.')">Buy Now</button>
+          <button class="btn btn-cart" onclick="alert('Item added to cart.')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
